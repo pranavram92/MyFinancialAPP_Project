@@ -1,0 +1,84 @@
+#loginpage {
+  background-color: hwb(0 95% 5% / 0.965);
+}
+
+#apptitle {
+  color: rgb(61, 170, 213);
+}
+
+#logo {
+  margin-left: 220px;
+  width: 100px;
+  height: 75x;
+  border-radius: 25px;
+}
+
+#logindisplaybox {
+  margin: auto;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+#login1 {
+  background-color: rgb(61, 170, 213);
+  color: white;
+}
+
+#logout {
+  width: 150px;
+  height: 45px;
+  float: right;
+  color: white;
+  background-color: rgb(61, 170, 213);
+  font-weight: lighter;
+}
+
+#back_button {
+  width: 250px;
+  height: 24px;
+  float: center;
+  background-color: rgb(61, 170, 213);
+  color: white;
+  font-weight: lighter;
+}
+
+#load-moreTxns {
+  margin-top: 10px;
+  width: 1600px;
+  height: 50px;
+  background-color: rgb(61, 170, 213);
+  color: white;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+#load-morebanks {
+  margin-top: 10px;
+  width: 1600px;
+  height: 50px;
+  background-color: rgb(61, 170, 213);
+  color: white;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#viewAccs {
+  width: 220px;
+  height: 40px;
+  color: white;
+  background-color: rgb(61, 170, 213);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#tablebanks {
+  margin-left: auto;
+  margin-right: auto;
+}

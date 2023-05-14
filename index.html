@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <link rel="stylesheet" type="text/css"
+            href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js" id="cordova-jquery"></script>
+        <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self' 'unsafe-inline' data: gap: https://code.jquery.com https://ssl.gstatic.com https://apisandbox.openbankproject.com 'unsafe-eval'; style-src 'self' code.jquery.com 'unsafe-inline'; media-src *; img-src 'self' code.jquery.com data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Login Page</title>
+    </head>
+</head>
+
+<body>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <div data-role="page" id="loginpage">
+        <div id="logindisplaybox" data-role="main" class="ui-content">
+            <h1 id="apptitle"> Fin-Stir: Banking Through Your Fingers </h1>
+            <img id="logo" src="img/Pound2.jpg">
+            <input id="uname" type="text" placeholder="Enter your user id">
+            <input id="pwd" type="password" placeholder="Enter your password">
+            <a id="login1" class="ui-btn ui-icon-arrow-r" onclick="signin1();">Log In</a>
+        </div>
+    </div>
+    <div data-role="page" id="bankpage">
+        <div data-role="main" class="ui-content">
+            <button id="logout" onclick="logoff();">Log out</button>
+            <h1> These are the list of banks</h1>
+            <table id="tablebanks" data-role="table" class="table-stripe ui-responsive">
+                <thead style="text-align: center">
+                    <tr>
+                        <th>Bank</th>
+                        <th>Accounts</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div data-role="page" id="accpage">
+        <div data-role="main" class="ui-content">
+            <button id="logout" onclick="logoff();">Log out</button>
+            <h1 id="listofaccs"> Your list of Accounts</h1>
+            <table id="table2" data-role="table" class="table-stripe ui-responsive">
+                <thead style="text-align: center">
+                    <tr>
+                        <th>Account Number</th>
+                        <th>AccountType</th>
+                        <th>Transactions</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody2">
+                </tbody>
+            </table>
+            <a href="#bankpage" data-role="button" data-icon="arrow-l" id="back_button" onclick="deleteTable1();">Go
+                back to List of Banks</a>
+        </div>
+    </div>
+    <div data-role="page" id="txnpage">
+        <div data-role="main" class="ui-content">
+            <button id="logout" onclick="logoff();">Log out</button>
+            <h1> Your List of Transactions </h1>
+            <table id="table3" data-role="table" class="table-stripe ui-responsive">
+                <thead style="text-align: center">
+                    <tr>
+                        <th>Transaction Detail</th>
+                        <th>Amount</th>
+                        <th>Currency</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody3">
+                </tbody>
+            </table>
+            <a href="#accpage" data-role="button" data-icon="arrow-l" id="back_button" onclick="deleteTable2();">Go back
+                to List of Accounts</a>
+        </div>
+    </div>
+</body>
+
+</html>
